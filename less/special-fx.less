@@ -1,0 +1,83 @@
+
+.glow {
+   
+    color: @white;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px @light-orange, 0 0 40px @light-orange, 0 0 50px @light-orange, 0 0 60px @light-orange, 0 0 70px @light-orange;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px @primary-orange, 0 0 40px @primary-orange, 0 0 50px @primary-orange, 0 0 60px @primary-orange, 0 0 70px @primary-orange, 0 0 80px @primary-orange;
+    }
+  }
+
+  .glowT {
+   
+    color: @light-teal;
+    text-align: center;
+    -webkit-animation: glowT 1s ease-in-out infinite alternate;
+    -moz-animation: glowT 1s ease-in-out infinite alternate;
+    animation: glowT 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glowT {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px @light-teal, 0 0 40px @light-teal, 0 0 50px @light-teal, 0 0 60px @light-teal, 0 0 70px @light-teal;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px @primary-teal, 0 0 40px @primary-teal, 0 0 50px @primary-teal, 0 0 60px @primary-teal, 0 0 70px @primary-teal, 0 0 80px @primary-teal;
+    }
+  }
+
+
+
+
+/**LIFT SHADOW GLOW ORANGE**/
+.glowShadowOrg {
+     color: #FB4264;
+     text-shadow: 0 0 3vw #F40A35;
+     }
+     .glowShadowOrg {
+     animation: glowShadowOrg 1.2s ease infinite;
+     -moz-animation: glowShadowOrg 1.2s ease infinite;
+     -webkit-animation: glowShadowOrg 1.2s ease infinite;
+     }
+     @keyframes glowShadowOrg {
+     0%,
+     100% {
+     text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+     color: #FED128;
+     }
+     50% {
+     text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+     color: #806914;
+     }
+     }
+
+     /**LIFT SHADOW GLOW**/
+.glowShadow {
+  color: #FB4264;
+  text-shadow: 0 0 3vw #F40A35;
+  }
+  .glowShadow {
+  animation: glowShadow 1.2s ease infinite;
+  -moz-animation: glowShadow 1.2s ease infinite;
+  -webkit-animation: glowShadow 1.2s ease infinite;
+  }
+  @keyframes glowShadow {
+  0%,
+  100% {
+  text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+  color: #FED128;
+  }
+  50% {
+  text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+  color: #806914;
+  }
+  }

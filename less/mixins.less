@@ -1,0 +1,176 @@
+
+//Global Mixins
+.bgImgCover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.hTopBorderRadius{
+    border-top-left-radius: @borderRadius;
+    border-top-right-radius: @borderRadius;
+}
+
+.txtEngraveFx {
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+/*HEADER MIXINS*/
+//header company name style
+.hCoNameStyle{
+    font-family:@hCoNameFontFam;
+    color:@hCoNameColor;
+    font-size: @headerLgSz;
+    font-weight: 900;
+   .txtEngraveFx();
+
+   &:hover {
+       .glow();
+
+   }
+
+   &:active{
+       .glowT();
+   }
+   @media @tablet {
+    font-size: 2.4rem;
+
+}//end tablet company name
+  @media @phone {
+
+      font-size: 2.8rem;
+           &:focus{
+          border: 1px solid @dark-orange;
+      }
+
+  }
+}
+//header nav link style
+.navLinkStyle{
+    text-decoration: none;
+    color:@hNavAnchorsColor;
+    font-family:@hNavFontFam;
+    font-size:@hNavSz;
+    .txtEngraveFx();
+    @media @tablet {
+        font-size: 2.5rem;
+    }
+
+}
+
+/*HERO MIXINS*/
+
+.hHeroHeaderTxtStyle {
+    font-family: @hHeroTxtFam;
+    // color: @hHeroTxtColor;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 3.2rem;
+
+    @media @tablet {
+        font-size: 2.4rem;
+    }
+    @media @phone {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+}
+
+/*TOP SECTION MIXINS*/
+.imgWrapPosRow3 {
+    display: flex;
+    justify-content:  center;
+    margin-top: 5%;
+max-width:100%;
+border-top-left-radius: @borderRadius;    
+border-top-right-radius: @borderRadius;    
+border-bottom: none;
+}
+.imgResize {
+    height:15%;
+    width: 25%;
+}
+.topTxtWrapStyle {
+display: flex;
+margin-left: 6.5%;
+margin-right: 6.5%;
+
+}
+
+.txtTopStyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top:@pTxtRow3Hgt;
+    padding-bottom: @pTxtRow3Hgt;
+    margin-top: 3%;
+
+    background-color:@off-white;
+    text-align: center;
+
+    border: 3px solid #37474f;
+  border-radius:7px;
+}
+
+.rowWrap3 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: @pTxtRow3;
+    padding-right: @pTxtRow3;
+}
+
+
+
+.contentShadow {
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btnStyle{
+    width: 170px;
+    height: 50px;
+    margin: 3.2rem;
+    font-size: 1.8rem;
+    font-family: @bree-font;
+    border: 4px inset @btnBorderColor;
+    background-color: @off-white;
+    color: @btnFontColor;
+    border-radius: 5px;
+
+    &:hover{
+      /**  box-shadow: offset-x | offset-y| blur-radius **/
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(248,148,6,0.22);
+  background-color: @hBtnBgColor;
+  border: 3px outset @charcoal-black;
+  color:@hBtnFontColor;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-family: @stroke-font;
+    }
+
+    &:active {
+        width: 170px;
+        height: 50px;
+        margin: 3.2rem;
+        font-size: 1.8rem;
+        font-family: @bree-font;
+        border: 4px inset @btnBorderColor;
+        background-color: @off-white;
+        color: @btnFontColor;
+        border-radius: 5px;
+    
+    }
+
+}
+
+
+
+//GROOVE TOP AND BOTTOM
+.borderGrooveTB(@grooveColorTop; @grooveColorTop){
+    border-top:2px groove @grooveColorTop;
+    border-bottom:2px groove @grooveColorTop;
+}

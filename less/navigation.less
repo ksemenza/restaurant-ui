@@ -1,0 +1,100 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    max-width: 100%;
+    background-color:@hBgColor;
+    .hTopBorderRadius();
+    border-bottom: 2px groove @primary-teal;
+    @media @tablet {
+        justify-content: space-between;
+    }//end tablet header
+
+    @media @phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-image: url(/src/img/logo/android-chrome-512x512.png);
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
+ 
+    //WRAP COMPANY NAME AND LOGO
+    .logoCompanyNameWrap {
+        margin-left: @mHeaderLogo;
+        display: flex;
+        align-items: center;
+.logoImg {
+    width: @logoSize80px;
+    height: @logoSize80px;
+
+    
+}//end logoImg
+.companyName {
+   .hCoNameStyle();
+}//end companyName
+    }//end logoCompanyName
+
+
+.headerLinkWrap {
+margin-right:5%;
+
+    }//end headerLinks
+    #myPassport {
+        margin-right: @mHeaderPassLinkLeft;
+
+        @media @tablet {
+            display: none;
+
+        }
+    }
+    #logIn {
+
+
+        @media @tablet {
+            color:@primary-teal;
+            font-weight: 700;
+            font-size: 2.1rem;
+        }
+   
+
+        @media @phone {
+            color:@dark-orange;
+            font-size: 1.6rem;
+            .glowShadowOrg();
+        }
+    }//end of logIn
+}//end header
+//header nav anchor style
+
+a {
+    text-decoration: none;
+  
+}
+.navAnchor {
+  .navLinkStyle();
+
+  &:hover{
+      .glow();
+  }
+
+  &:active{
+
+
+      @media @tablet {
+          font-size: 3.2rem;
+      }
+  }
+
+}
+
+a .logoImg {
+
+    @media @phone {
+    display: none;
+    }
+}
+
+
+

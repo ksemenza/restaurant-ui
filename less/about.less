@@ -1,0 +1,173 @@
+
+/*SECTION ELEMENT SEPERATES*/
+.aboutWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.2rem;
+}
+/*SECTION ELEMENT SEPERATES*/
+
+
+/*WRAPS SINGLE ENTIRE PROFILE*/
+.profileWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+ 
+    @media @tablet {
+        max-width: 255px;
+    }
+
+    @media @phone {
+        margin-bottom: 2.4rem;
+  
+      max-width: 175px; 
+    }//end phone profileWrap
+}//end profileWrap
+
+
+/*WRAPS TWO ENTIRE PROFILES TOGETHER*/
+.wrapProfile2{
+    display: flex;
+    flex-direction: row;
+   
+  
+
+    @media @tablet {
+        flex-direction: column;
+    }
+
+}
+
+
+/*WRAPS IMG AND CONTACTS*/
+.profileImgContactWrap {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}//end profileImgContacWrap
+
+/*WRAPS ALL PROFILES CONTACTS*/
+.contactWrapAll {
+    display: flex;
+    align-items: center;
+}//end contactWrapAll
+
+
+
+
+/****  CLASSES ****/
+
+
+.profileTitle {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin: 1.4rem;
+
+    @media @tablet {
+        font-size: 2.4rem;
+    }//end tablet profileTitle
+
+    @media @phone {
+        margin: 1.0rem;
+    }
+}
+
+.profileName {
+    font-size: 24px;
+
+    text-align: center;
+
+    @media @tablet {
+        font-size: 1.8rem;
+        padding: 2.1rem;
+    }//end tablet profileName
+
+    @media @phone {
+        padding: 1.0rem;
+    }//end phone profileName
+}
+
+.profileImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 125px;
+    margin-left: 35%;
+    margin: 1.6rem;
+
+    &:hover {
+     
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+
+}//end profileImg
+
+.imgBioWrap {
+    width: 20%;
+    height: 75px;
+    display: flex;
+}
+
+.bioHeader {
+    font-size: 2.1rem;
+    font-family: @marker-font;
+}
+.bioTxt {
+    width: 350px;
+    height: 250px;
+    padding: @pBioTxt;
+    text-align: center;
+
+    @media @tablet {
+        width:fit-content;
+        height: 100%;
+  
+    }
+}
+
+.contactIcon{
+    width: @contactIconDim;
+    height:@contactIconDim;
+    margin: 1.2em;
+
+    &:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+
+    &:active {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    @media @tablet {
+       width:@contactIconDimPhone;
+       height:@contactIconDimPhone;
+    }// end tablet contactIcon
+}// end contactIcon
+
+.contactType{
+    font-size: 2.1rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+}//end contactType
+
+.contactInfo{
+    font-size: 1.8rem;
+    @media @tablet {
+        font-size: 1.4rem;
+    }//end tablet contactInfo
+}//end contactInfo
+
+.thanksTitle{
+    text-align: center;
+  font-size: 1.0rem;
+}//end specialThanks
+
+.creditFonts {
+    font-size: 0.8rem;
+    text-align: center;
+}
